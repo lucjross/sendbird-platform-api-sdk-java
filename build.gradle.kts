@@ -1,7 +1,4 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "1.8.21"
     `java-library`
     id("org.openapi.generator") version "6.4.0"
     `maven-publish`
@@ -30,8 +27,6 @@ dependencies {
     implementation("com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.15.2")
     implementation("org.apache.httpcomponents.client5:httpclient5:5.2.1")
     implementation("jakarta.annotation:jakarta.annotation-api:2.1.1")
-
-    testImplementation(kotlin("test"))
 }
 
 openApiGenerate {
@@ -65,8 +60,9 @@ tasks {
         }
     }
 
-    withType<KotlinCompile> {
-        kotlinOptions.jvmTarget = "1.8"
+    withType<JavaCompile> {
+        sourceCompatibility = "1.8"
+        targetCompatibility = "1.8"
         dependsOn(openApiGenerate)
     }
 }
