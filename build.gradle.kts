@@ -4,9 +4,10 @@ plugins {
     kotlin("jvm") version "1.8.21"
     `java-library`
     id("org.openapi.generator") version "6.4.0"
+    `maven-publish`
 }
 
-group = "io.github.lucjross"
+group = "com.github.lucjross"
 version = "1.0-SNAPSHOT"
 
 repositories {
