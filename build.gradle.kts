@@ -70,3 +70,11 @@ tasks {
         dependsOn(openApiGenerate)
     }
 }
+
+publishing {
+    publications {
+        create<MavenPublication>(project.name) {
+            from(components["java"])
+        }
+    }
+}
