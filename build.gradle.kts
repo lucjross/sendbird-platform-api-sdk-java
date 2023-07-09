@@ -22,9 +22,9 @@ java {
 }
 
 dependencies {
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2")
-    implementation("com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.15.2")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.14.1")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.1")
+    implementation("com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.14.1")
     implementation("org.apache.httpcomponents.client5:httpclient5:5.2.1")
     implementation("jakarta.annotation:jakarta.annotation-api:2.1.1")
 }
