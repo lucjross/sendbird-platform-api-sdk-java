@@ -2,6 +2,8 @@
 
 ---
 
+[![](https://jitpack.io/v/lucjross/sendbird-platform-api-sdk-java.svg)](https://jitpack.io/#lucjross/sendbird-platform-api-sdk-java)
+
 ## Gradle
 
 ```kotlin
