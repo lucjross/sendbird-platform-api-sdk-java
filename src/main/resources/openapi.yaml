@@ -12042,14 +12042,10 @@ components:
           is_online: true
           last_seen_at: 0
           is_hide_me_from_friends: true
-        token:
-          - token
-          - token
+        token: token
       properties:
         token:
-          items:
-            type: string
-          type: array
+          type: string
         user:
           $ref: '#/components/schemas/SendBird.User'
       type: object
